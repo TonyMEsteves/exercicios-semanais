@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 08-07-2020 manhã</title>
+</head>
+<body>
+    
+    
+    <script> 
+        /*
+        Entender:
+
+        Problema: Criar um sistema que receba3 notas
+        Deve devolver as notas, a sma delas e a media das mesmas.
+        Se a media for menor que 60, informar o usuário que ele foi reprovado
+        Caso contrário deve informar deve informar que ele está reprovado
+
+        Planejar:
+
+        1º Criar uma forma de receber 3 notas.   OK
+            1.1 Utilizar prompt e parseInt
+        2º Deve devolver as notas informadas.
+        3º Deve somar as notas e mostrar.
+        4º Deve calcular a media e mostrar.
+        5º Verificar se a soma é menor que 60
+            5.1 Se for, mostrar mensagem que ele está reprovado
+            5.2 Se não for, mostrar que ele está aprovado.
+
+
+        Executar:
+
+
+        Revisar:
+        
+        1º Deve ser possivel informar 3 notas
+        2º Deve ser possivel visualizar as 3 notas na tela
+        3º Deve ser possivel visualizar a soma das notas
+        4º Deve ser possivel visualizar a media das notas
+        5º Deve ser possivel visualizar a aprovação
+        6º Deve zerar os valores caso não informe um numero
+
+
+
+
+
+
+
+
+
+        */
+
+
+    var primeiraNota = parseInt(prompt('digite a primeira nota'));
+    var segundaNota = parseInt(prompt('digite a segunda nota'));
+    var terceiraNota = parseInt(prompt('digite a terceira nota'));
+    const pularLinha = '<br>';
+
+    if(isNaN(primeiraNota)){    
+        primeiraNota = 0;
+    }
+    if(isNaN(segundaNota)){ 
+        segundaNota = 0;
+    }
+    if(isNaN(terceiraNota)){    
+        terceiraNota = 0
+    }
+
+
+    document.write('Primeira nota: ' + primeiraNota + pularLinha);
+    document.write('Segunda nota:' + segundaNota + pularLinha);
+    document.write('Terceira nota:' + terceiraNota + pularLinha);
+    document.write(pularLinha);
+
+    var soma = primeiraNota + segundaNota + terceiraNota;
+    document.write('A soma das notas é: ' + soma + pularLinha);
+
+    var media = soma/3;
+    document.write('A media das notas é: ' + media + pularLinha)
+    document.write(pularLinha);
+
+   if(soma < 60) {
+       document.write('<h1 style="color: red">Reprovado :( </h1>');
+   }else {
+       document.write('<h1 style= "color: green">Aprovado \\o/ </h1>');
+       }
+
+
+
+
+
+
+
+   
+    
+    </script>
+    
+</body>
+</html>

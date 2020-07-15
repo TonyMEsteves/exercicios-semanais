@@ -1,0 +1,107 @@
+<html>  
+    <head>  
+        <title>Aula 07-07-2020</title>
+        <!-- Aqui são carregados os "scripts", fontes e Css de terceiros -->
+    </head>
+    <body>
+        <script>
+            // é uma forma de comentário inline
+            
+            /*
+                Aqui é um comentário em bloco
+                
+                Caracterísrica do Javascript
+
+                1º JavaScript não é Java.
+                2º JavaScript tmabém pode ser chamado de EcmaScript.
+                3º JavaScript é uma linguagem CaseSensitive. (CS).
+                4º JavaScript é uma linguagem interpretada.
+                5º javaScript é uma linguagem com tipagem simples.
+                6º Acordo: Sempre terminar utilizando ponto e virgula no final.
+
+                outputs:
+                alert()
+                console.log()
+                documento.write();
+
+                inputs
+                prompt()
+            */
+
+            // Dispara uma mensagem no navegar
+            // alert('Levantar da "cadeira"')
+            
+            // é um comando de input
+            // alert( prompt("Digite seu nome") );
+
+            var nome = prompt('Digite seu nome!');
+
+            // document.write('Seu nome é: ' + nome); //Estou Concatenando.
+            // document.write('<br>Aprendemos o oputput document.write()');
+
+            /*
+                Boas práticas com JavaScript
+
+                1º Sempre dar nome as variáveis de acordo com o que eles vão receber.
+                2º Sempre criar nomes de variáveis e funções em camelCase.
+                3º Sempre manter o codigo indentado.
+                4º Sempre utilizar ponto e virgula ao final de cada instrução.
+
+                Existe alguns padrões de escrita de código
+                Case Styles:
+
+                camelCase: usado no javascript e em Java
+                PascalCase:csharpe usado em C#
+                snake_case: tudo minuscula mas separado por _ usado em Python
+                kibab-case: tudo minusculo separado por traço - HTML/CSS/JavaScript
+
+                Tipos de dados:
+
+                String: trabalhar com textos
+                Number: Trabalhar com numeros ( pode ser inteiros ou flutuantes (decimais))
+                Boolean: Trabalhar com condicionais (verdade ou mentira)
+                Object: Trabalhar com objetos
+                Array: Trabalhar com matrizes
+                Undefined: Significa indefinido, não tem tipo, não tem nada.
+
+                Operadores lógicos
+
+                && - ambas as condiçoes tem que ser verdade
+                || ou - pelo menos uma condição tem que ser verdade.
+                == - Ambas as condiçoes tem que ser iguais.
+                != - Testar se é diferente
+
+
+                Conditionais:
+                if e else: utilizados para fazer testes.
+            
+            */
+
+            // somente na concatenação que ele vai tentar juntar em forma de texto.
+            // em outras operações ele vai tentar converter automagicamente antes de executar.
+
+            var numero = prompt('digite numero')
+
+            if(numero > 10){
+               alert(' Voce digitou um numero maior que 10') // Executa o que estiver dentro.
+            
+            } else {
+                alert('Voce digitou um numero menor que 10') //executa aqui ...
+            }
+            
+
+        </script>
+    </body>
+
+</html>
+
+<!-- 
+    
+    Regras do HTML:
+
+    1º Sempre criar tags em caixa baixa (letra minúscula, lowerCase)
+    2º Sempre indentar o código (Arrumar a casa)
+    3º Sempre fechar as tags.
+    4º Sempre fechar as tags na ordem correta.
+        <p> Eu sou um <strong><em>parágrafo!</em></strong></p>
+ -->

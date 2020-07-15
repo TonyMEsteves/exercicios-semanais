@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serratec 09-07-2020</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Hoje vamos aprender Array e metodos\o/
+            Fila: Primeiro que entra é o primeiro que sai
+            Pilha: Significa que po primeiro que entra é o útimo que sai.
+        */
+
+        var saladaDeFrutas =[];
+        var adicionarMaisFruta = true;
+
+        alert('Bem vindos a barraquinha de salada de frutas do professor');
+        var nome = prompt('Digite seu nome');
+
+        var fruta = prompt('Escolha uma fruta');
+        saladaDeFrutas.push(fruta);
+
+        while(adicionarMaisFruta){  
+            var resposta = prompt('Deseja adicionar mais frutas - sim ou não');
+
+            console.log(resposta);
+
+            if(resposta.toLowerCase() == 'sim') {
+                fruta = prompt('Escolha uma fruta');
+                saladaDeFrutas.push(fruta);
+            }else{
+                adiccionarMaisFruta = false;
+            }
+        }
+
+
+        document.write('Sua salada de fruta está pronta:) <br><br>');
+        document.write('Frutas: <br>');
+
+        for(var i = 0; i < saladaDeFrutas.lenght; i++){ 
+            document.write(saladaDeFurtas[1] + '<br>');  
+
+        }
+      
+
+    </script>
+    
+</body>
+</html>

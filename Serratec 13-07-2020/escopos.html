@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    
+    <script>
+        // //  Aqui é o escopo global.
+        // var nome = 'Fulano <br>'
+        // document.write(nome);
+
+        // // Geralmente chamamos isso de Function Scopes.
+        // function teste(){
+        //     //  Aqui dentro é um escopo local.
+        //     document.write(nome);
+        //     var idade = 25;
+        // }
+
+        // document.write(nome);
+        // teste()
+        // document.write(idade);
+
+    // var nome = 'Fulano';
+
+    // function teste(){
+    //     var nome = 'Ciclano'
+    //     document.write(nome);
+    // }
+
+
+    // teste();
+    // document.write(nome);
+
+
+    
+    
+    // let nome = 'Fulano';
+
+    // //  Block Scope
+    // if(true){ // Aqui não é local, é global também
+    //     var nome = 'Ciclano';
+    //     document.write(nome);
+    // }
+
+    // document.write(nome);
+
+
+    const nome = "Fulano";
+    const pessoa = {nome: "Beltrano", idade: 21};
+    const pular = '<br>';
+
+    document.write(nome);
+    document.write(pular);
+    document.write(JSON.stringfy(pessoa));
+    document.write(pular);
+    document.write(pular);
+
+    const nome2 = nome;
+    const pessoa2 = pessoa;
+
+    document.write('Segunda parte <br>');
+    document.write(nome2);
+    document.write(pular);
+    document.write(JSON.stringfy(pessoa2));
+    document.write(pular);
+    document.write(pular);
+
+    // Se liga na magia.....
+
+    document.write('Segunda parte <br>');
+    document.write(nome);
+    document.write(pular);
+    document.write(JSON.stringfy(pessoa2));
+    document.write(pular);
+    document.write(pular);
+
+
+    // Agora vamos aprender a clonar o nosso objeto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
